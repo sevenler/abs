@@ -133,13 +133,6 @@ if ($_REQUEST['step'] == 'add_to_cart')
     /* 更新：购物车 */
     else
     {
-        if(!empty($goods->spec))
-        {
-            foreach ($goods->spec as  $key=>$val )
-            {
-                $goods->spec[$key]=intval($val);
-            }
-        }
         // 更新：添加到购物车
         if (addto_cart($goods->goods_id, $goods->number, $goods->spec, $goods->parent))
         {

@@ -1,7 +1,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $promotion_goods} -->
-<div class="module">
-	<h1 class="modTitle"><p>{$lang.promotion_goods}</p><a href="../search.php?intro=promotion" class="more">more</a></h1>
+<div class="mod1 blank">
+	<span class="lt"></span><span class="lb"></span><span class="rt"></span><span class="rb"></span>
+	<h1 class="mod1tit"><p>{$lang.promotion_goods}</p><a href="../search.php?intro=promotion" class="more">更多</a></h1>
+
 	<div class="promotion_goods">
 	 <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
 	 <!-- {if $smarty.foreach.promotion_foreach.index lt 3} 限制显示数量 -->

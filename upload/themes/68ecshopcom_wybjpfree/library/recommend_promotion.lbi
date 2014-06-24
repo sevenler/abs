@@ -6,7 +6,7 @@
 
 	<div class="promotion_goods">
 	 <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
-	 <!-- {if $smarty.foreach.promotion_foreach.index lt 3} 限制显示数量 -->
+	 <!-- {if $smarty.foreach.promotion_foreach.index lt 30} 限制显示数量 -->
    <div class="goodsbox">
 	   <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}"/></a></div>
 	 	 <strong class="f1">{$goods.promote_price}</strong><br />
